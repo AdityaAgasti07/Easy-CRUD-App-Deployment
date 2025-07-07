@@ -161,6 +161,11 @@ Key Points:
 5. In Security Group, allow your IP on port 3306
 6. Note down the endpoint, username, and password
 
+## Created DB-Instance
+
+![Screenshot 2025-07-07 034722](https://github.com/user-attachments/assets/cce12d28-3659-4823-991f-8e4e469bcc9b)
+
+
 **Advanced Database Concepts:**
 
 **RDS Multi-AZ Deployment:** AWS automatically replicates data to a standby instance in different Availability Zone for high availability. If primary fails, automatic failover occurs within 2 minutes.
@@ -221,6 +226,9 @@ docker-compose up --build
 
 ### Open your app: 
 http://localhost:5173
+
+![Screenshot 2025-07-07 034822](https://github.com/user-attachments/assets/d00478a5-bb27-4222-a3a5-1e66fd5694c7)
+
 
 ## Troubleshooting
 
