@@ -17,7 +17,7 @@ public class UserController {
     @Autowired
     private UserRepository userRepository;
 
-    @PostMapping("/register")
+    @PostMapping("/users")
     public User registerUser(@RequestBody User user) {
         return userRepository.save(user);
     }
@@ -27,7 +27,6 @@ public class UserController {
         return userRepository.findAll();
     }
 
-    // Delete user by ID
     @DeleteMapping("/users/{id}")
     public ResponseEntity<String> deleteUser(@PathVariable Long id) {
         Optional<User> user = userRepository.findById(id);

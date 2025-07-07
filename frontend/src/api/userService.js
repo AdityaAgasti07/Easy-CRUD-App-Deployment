@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = import.meta.env.VITE_API_URL;
+const BASE_URL = "/api";
 
 export const fetchUsers = async () => {
   try {
@@ -14,7 +14,7 @@ export const fetchUsers = async () => {
 
 export const registerUser = async (userData) => {
   try {
-    await axios.post(`${BASE_URL}/register`, userData);
+    await axios.post(`${BASE_URL}/users`, userData);
   } catch (error) {
     console.error("Error registering user:", error);
     throw error;
